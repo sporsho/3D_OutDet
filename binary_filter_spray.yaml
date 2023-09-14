@@ -1,0 +1,35 @@
+# This file is covered by the LICENSE file in the root of this project.
+name: "binary_desnow"
+max_points: 250000
+labels:
+  0: "background"
+  1: "foreground"
+  2: "noise"
+
+color_map: # rgb
+  0 : [0, 255, 0]  # background
+  1 : [0, 0, 255] # foreground
+  2: [255, 255, 255] # noise
+
+content: # as a ratio with the total number of points
+  0: 196553910 # background
+  1: 1618805 # foreground
+  2: 2435157 # noise
+
+
+learning_map:
+  0 : 0     # "background"
+  1 : 0     # "foreground"
+  2 : 1     # "noise"
+
+
+
+learning_map_inv: # inverse of previous map
+  0: 0      # "background",
+  1: 2     # "noise"
+
+
+learning_ignore: # Ignore classes
+  0: False      # "unlabeled", and others ignored
+  1: False     # "car"
+  2: False     # "other-vehicle"
