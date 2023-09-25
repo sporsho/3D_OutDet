@@ -36,7 +36,7 @@ if __name__ == "__main__":
         comb = np.concatenate((raw_data, annotated_data), axis=1)
 
         unique = np.unique(comb, axis=0)
-        u_raw = unique[:, 0:4].reshape(-1).astype(np.float32)
+        u_raw = unique[:,  0:4].reshape(-1).astype(np.float32)
         u_lab = unique[:, 4].reshape(-1).astype(np.int32)
         u_im_file = im.replace("WADS", "WADS2")
         u_lab_file = u_im_file.replace('velodyne', 'labels')[:-3] + 'label'
