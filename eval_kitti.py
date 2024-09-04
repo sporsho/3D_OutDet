@@ -126,8 +126,6 @@ if __name__ == '__main__':
                         default='/var/local/home/aburai/DATA/3D_OutDet/bin_desnow_kitti/outdet.pt')
     parser.add_argument('-o', '--test_output_path',
                         default='/var/local/home/aburai/DATA/3D_OutDet/bin_desnow_kitti/outputs')
-    parser.add_argument('-m', '--model', choices=['polar', 'traditional'], default='polar',
-                        help='training model: polar or traditional (default: polar)')
     parser.add_argument('--device', type=str, default='cuda:1', help='validation interval (default: 4000)')
     parser.add_argument('--K', type=int, default=3, help='batch size for training (default: 2)')
 
