@@ -34,3 +34,7 @@ We added RandLA-Net on our WADS benchmark.
 | ------------ | -------- | --------- | ------ | ------- | 
 | RandLa-Net | 69.99 | 96.86 | 81.26 | 68.43 | 
 | 3D-OutDet |  96.78 | 92.76 | 94.73 | 90.00 | 
+
+# UPDATE 
+A CPP / TensorRT implementation is underway for deployment in real vehicle. 
+https://github.com/sporsho/OutDetCPP
